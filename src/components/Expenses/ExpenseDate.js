@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExpenseDate.css';
 
-function ExportDate(props) {
+const ExportDate = (props) => {
   const month = props.date.toLocaleString('en-US', { month: 'long' });
   const date = props.date.toLocaleString('en-US', { day: '2-digit' });
   const year = props.date.getFullYear();
@@ -13,6 +13,6 @@ function ExportDate(props) {
       <div className="expense-date__year">{year}</div>
     </div>
   );
-}
+};
 
 export default ExportDate;
